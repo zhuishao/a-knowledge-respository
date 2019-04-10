@@ -1,0 +1,2 @@
+#检测是否会javascript数组
+value instanceof Array
