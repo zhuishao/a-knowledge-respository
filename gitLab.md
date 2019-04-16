@@ -17,10 +17,12 @@ git branch
 git branch -r
 ###创建一个新的分支
 git checkout -b feature_x
-###切换分支
+###切换分支（自动创建本地分支）
 git checkout master
 ###删去分支
 git branch -d featrue_x，不在当前分支才能删
+##本地分支上传到远程未开分支
+git push --set-uptsream origin dailytest
 ###提交分支到远程服务器
 git push origin <branch>
 ###合并(合并到当前)

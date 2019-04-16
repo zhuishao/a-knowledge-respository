@@ -44,3 +44,5 @@ git checkout dialy/1.0.0
 git checkout -- src/
 ###已经add的文件取消add
 git reset Head 文件名
+###windows与linux，windows git 设置
+git config --global core.autocrlf true
