@@ -22,7 +22,7 @@ git checkout master
 ###删去分支
 git branch -d featrue_x，不在当前分支才能删
 ##本地分支上传到远程未开分支
-git push --set-uptsream origin dailytest
+git push --set-upstream origin dailytest
 ###提交分支到远程服务器
 git push origin <branch>
 ###合并(合并到当前)
@@ -31,6 +31,8 @@ git merge <branch>
 git push origin --delete feat
 ###更新本地分支
 git pull origin daily/1.0.0
+###更新远程地址
+git remote add origin
 ###提交远程之前检查错误
 npm run lint
 ###把远程分支合并
