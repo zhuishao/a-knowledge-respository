@@ -21,3 +21,16 @@ const state={
 	nodes:['AL']
 };
 export default state;
+###修改store中数据
+1. 定义actions中内容 setUser({commit},){ commit({type:'setUser',state})}
+2. 在mutations:{
+		setUser(state,payload){
+			
+		}
+
+	}
+
+###获得数据并在页面使用
+1. 现在store.js中定义user:{username:'sdf',passowrd:'ddd'}
+2. 在computed中映射 ...mapState(['user'])
+3. 使用{{user.username}}

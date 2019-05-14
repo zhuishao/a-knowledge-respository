@@ -61,6 +61,12 @@ npm run lint
 5. 这一个分支git pull origin feat
 6. 这一个分支上传到远程分支
 
+###本地项目上传到gitLab上
+1. 本地git init
+2. 与github连接  ssh -T git@github.com（要确保以前连接过）
+3. 本地 git add,commit
+4. 上传  git push -u origin master
+
 
 
 
