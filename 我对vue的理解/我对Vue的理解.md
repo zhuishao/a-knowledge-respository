@@ -21,9 +21,11 @@
 3. router中的index.js文件可以存放所有的页面路径
 ##创建项目新的方式
 >打开gitcmd到项目目录，输入vue create 项目名称
-
 ##vue 生命周期
 文件内部包含
-
 ##vue 组件之间数据传递
+##重定向
+this.$router.redirect({})
+this.$router.push({})
+
 

@@ -22,7 +22,7 @@ git checkout master
 ###删去分支
 git branch -d featrue_x，不在当前分支才能删
 ##本地分支上传到远程未开分支
-git push --set-uptsream origin dailytest
+git push --set-upstream origin dailytest
 ###提交分支到远程服务器
 git push origin <branch>
 ###合并(合并到当前)
@@ -31,8 +31,12 @@ git merge <branch>
 git push origin --delete feat
 ###更新本地分支
 git pull origin daily/1.0.0
+###更新远程地址
+git remote add origin
 ###提交远程之前检查错误
 npm run lint
+###取消提交
+
 ###把远程分支合并
 1. 先给主线创建一个分支
 2. 提交分支到远程服务器
@@ -58,6 +62,12 @@ npm run lint
 4. 另一个分支上传到远程分支
 5. 这一个分支git pull origin feat
 6. 这一个分支上传到远程分支
+
+###本地项目上传到gitLab上
+1. 本地git init
+2. 与github连接  ssh -T git@github.com（要确保以前连接过）
+3. 本地 git add,commit
+4. 上传  git push -u origin master
 
 
 
