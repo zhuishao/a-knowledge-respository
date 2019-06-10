@@ -35,6 +35,8 @@ git pull origin daily/1.0.0
 git remote add origin
 ###提交远程之前检查错误
 npm run lint
+###取消提交
+
 ###把远程分支合并
 1. 先给主线创建一个分支
 2. 提交分支到远程服务器
