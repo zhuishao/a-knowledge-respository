@@ -68,8 +68,25 @@ npm run lint
 2. 与github连接  ssh -T git@github.com（要确保以前连接过）
 3. 本地 git add,commit
 4. 上传  git push -u origin master
+###远程down下来的本地项目上传合并的远程上
+1. 加入远程连接 git remote add origin git@github.com:zhuishao/kmbs.git
+2. 将远程连接pull下来 git pull origin master 
+3. 允许不同源上传 git pull origin master –allow-unrelated-histories
+4. 允许不同源上传 git pull --allow-unrelated-histories
+5. 进行代码合并加入readme git pull --rebase origin master
+6. git push origin master
+##问题：Your branch and 'origin/master' have diverged, and have 1 and 1 different commits each, respectively
+###当我们在本地提交到远程仓库的时候，如果遇到上述问题，我们可以首先使用如下命令：
 
+`git rebase origin/master` 
 
+###然后使用
+
+`git pull --rebase `
+
+###最后使用
+
+`git push origin master`
 
 
 
