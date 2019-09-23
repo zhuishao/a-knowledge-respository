@@ -26,7 +26,7 @@
 >git reflog
 
 ###回到从前的命令
->get reset -hard e2f3
+>get reset --hard e2f3
 ###删除文件
 >在目录下创建一个文件比如test.txt 再commit
 git rm test.txt
