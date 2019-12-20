@@ -35,7 +35,30 @@ git pull origin daily/1.0.0
 git remote add origin
 ###提交远程之前检查错误
 npm run lint
+###远程分支覆盖本地分支
+git reset --hard origin/master
 ###取消提交
+git checkout -- src/
+###版本回退
+git reset --hard HEAD^2  
+git reset --hard commit_id   
+##tag
+###创建tag
+git tag publish/1.0.0
+###给某个commit创建tag
+git tag -a v1.2 9fceb02 -m "my tag"
+###从tag创建分支
+git checkout -b branchName tagName
+###查找tag
+git tag
+###查找tag详细信息
+git show tagName
+###将tag同步到远程服务器
+git push origin [tagName]
+###本地删除tag
+git tag -d v0.1.2
+###远程删除
+git push origin :refs/<tagName>
 
 ###把远程分支合并
 1. 先给主线创建一个分支
