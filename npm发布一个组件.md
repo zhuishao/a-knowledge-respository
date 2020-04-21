@@ -45,7 +45,7 @@ if (typeof window !== 'undefined' && window.Vue){
 
 export default {
 	install,
-	...components,
+	ZInput，
 }
 ## 查看是否能用
 1. 在main.js中导入  
@@ -79,3 +79,10 @@ npm publish
 import Zui from 'z-ui-component'
 import 'z-ui-component/lib/z-ui-component.css'
 Vue.use(Zui)
+
+###单个引入
+import Zui from 'z-ui-component'
+
+Componnets: {
+	a: Zui.ZInput,
+}
